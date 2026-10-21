@@ -1,0 +1,24 @@
+enable 
+conf term 
+router rip
+network 192.168.1.0
+network 192.168.4.0
+version 2
+exit
+exit
+copy
+copy ru
+copy running st
+copy running startup-config 
+exit
+
+
+
+enable 
+configure terminal
+interface _____ gig0/0
+ip address ________________192.168.1.1 255.255.255.0
+no shutdown 
+exit
+do write 
+exit 
